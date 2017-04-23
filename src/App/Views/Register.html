@@ -1,0 +1,56 @@
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Enter Your Name" class="form-control input-md">
+    
+  </div>
+</div>
+
+    <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Reg_Email">Email</label>  
+  <div class="col-md-4">
+  <input id="Reg_Email" name="Reg_Email" type="text" placeholder="Enter Your E-mail" class="form-control input-md" required="">
+    
+  </div>
+</div>
+    
+    <!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Reg_Password">Password</label>
+  <div class="col-md-4">
+    <input id="Reg_Password" name="Reg_Password" type="password" ng-model = "Reg_Password" ng-change = 'CheckPassword()' placeholder="Enter the Password" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Reg_CnfPassword">Confirm Password</label>
+  <div class="col-md-4">
+    <input id="Reg_CnfPassword" name="Reg_CnfPassword" type="password" ng-model = "Reg_Cnfpassword" ng-change = 'CheckPassword()'  ng-focus = "show=true" placeholder="Confirm the Password" class="form-control input-md" required="">
+      <br>
+      <span  ng-show = "show"> Passwords Did Not Match..!!!</span>
+
+     
+  </div>
+   
+</div>
+    
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for=""></label>
+  <div class="col-md-4">
+    <button id="" name="" class="btn btn-primary" ng-click="RegisterUser()">Register</button> &nbsp <span> <a href="#/Login.html">Go back to login</a>
+</span>
+  </div>
+</div>
+
+</fieldset>
+</form>
